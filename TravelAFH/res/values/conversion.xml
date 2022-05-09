@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="distanceConversionArray">
+        <item>Select a Distance</item>
+        <item>Centimeter (cm)</item>
+        <item>Feet (ft)</item>
+        <item>Inch (In)</item>
+        <item>Kilometer (Km)</item>
+        <item>Meter (m)</item>
+        <item>Mile</item>
+        <item>Yard (yd)</item>
+    </string-array>
+    <string-array name="weightConversionArray">
+        <item>Select a Weight</item>
+   		<item>Kilogram (kg)</item>
+        <item>Gram (g)</item>
+        <item>Metirc Ton</item>
+        <item>Pound (lb)</item>
+        <item>Ounce (Oz)</item>
+    </string-array>
+    <string-array name="volumeConversionArray">
+   		<item>Select a Volume</item>
+   		<item>Liters (L)</item>
+        <item>Imperial Gallons (gal)</item>
+        <item>Milliliters (ml)</item>
+        <item>Centiliters(cl)</item>
+        <item>Pints (pt)</item>
+        <item>Tablespoon (tbsp)</item>
+    </string-array>
+</resources>

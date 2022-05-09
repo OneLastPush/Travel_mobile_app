@@ -1,0 +1,121 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.birikfr.travelafh.ConversionActivity"
+    android:background="@drawable/greybackground"
+    android:orientation="vertical" 
+    >
+	<TableRow>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25"
+        android:background="@drawable/convert" 
+        android:id="@+id/switchBtn">
+
+</ImageButton>
+
+   <ImageButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_weight=".25"
+       android:background="@drawable/distance"
+       android:id="@+id/distanceBtn"
+ >
+
+</ImageButton>
+
+   <ImageButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_weight=".25"
+       android:background="@drawable/volume"
+       android:id="@+id/volumeBtn"
+ >
+
+</ImageButton>
+
+   <ImageButton
+       android:id="@+id/weightBtn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_weight=".25"
+       android:background="@drawable/weight" >
+
+</ImageButton>
+</TableRow>
+<TableRow>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="40dip"
+        android:text="@string/convert"
+        android:id="@+id/Btn"
+        />
+        
+    
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight=".50"
+    android:inputType="numberDecimal"
+    android:paddingTop="40dip"
+    android:id="@+id/convertEditText"
+    >
+    </EditText>
+   </TableRow>
+    <TableRow>
+        <Button
+            android:layout_width="match_parent"
+   			android:layout_height="match_parent"
+   			android:text="@string/convertionButton"
+   			android:onClick="conversion"
+            >
+            
+            
+        </Button>
+        <TextView
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:textSize="32sp"
+    		android:id="@+id/convertResult"
+            />
+    </TableRow>
+  
+   <TableRow>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="40dip"
+        android:text="@string/convert"
+        
+        />
+    <Spinner
+    android:id="@+id/original_spinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    />
+        
+    
+  <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="40dip"
+        android:text="@string/to"
+        
+        
+        />
+    <Spinner
+    android:id="@+id/convert_spinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />
+    
+   </TableRow>
+
+
+</TableLayout>

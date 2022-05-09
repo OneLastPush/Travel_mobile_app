@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="currency">
+        <item>Select a Currency</item>
+        <item>EUR (Euro)</item>
+        <item>AUD (Australian)</item>
+        <item>BGN (Bulgarian)</item>
+        <item>BRL (Brazilian)</item>
+        <item>CAD (Canada)</item>
+        <item>CHF (Swiss)</item>
+        <item>GBP (British)</item>
+        <item>HUF (Hungarian)</item>
+    	<item>IDR (Idonesian)</item>
+    	<item>ILS (New Sheqel)</item>
+    	<item>INR (Indian Rupee)</item>
+    	<item>JPY (Yen)</item>
+    	<item>KRW (South Korean Won)</item>
+    	<item>MXN (Peso)</item>
+    	<item>MYR (Malaysian Ringgit)</item>
+    	<item>PLN (Polish Zloty)</item>
+    	<item>SEK (Swedish Krona)</item>
+    	<item>USD (USA)</item>
+    	<item>THB (Thai baht)</item>
+    	<item>RON (Romanian Leu)</item>
+    </string-array>
+</resources>

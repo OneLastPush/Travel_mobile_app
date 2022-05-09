@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.birikfr.travelafh.CurrencyActivity" 
+    android:background="@drawable/greybackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/currencyAmount" >
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" 
+          android:id="@+id/amountEdit"/>
+
+    <TableLayout
+        android:id="@+id/formCurrency"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/From" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/currencyType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </TableRow>
+      <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/to" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/currencyConvertTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+		<Button
+		    	android:layout_width="match_parent"         
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonshape"
+                android:padding="5dp"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="@string/convert"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:onClick="convert"
+		    ></Button>
+
+            <TextView
+                android:id="@+id/currencyResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="25sp" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+    <TextView
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+ android:layout_marginTop="20dp"
+ android:textSize="25sp"
+ android:id="@+id/date"
+    ></TextView>
+    
+<TextView
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+ android:layout_marginTop="20dp"
+ android:textSize="25sp"
+ android:id="@+id/displayMsg"
+    ></TextView>
+
+
+</LinearLayout>
+ 
+            

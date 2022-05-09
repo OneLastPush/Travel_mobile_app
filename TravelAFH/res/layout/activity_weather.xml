@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.birikfr.travelafh.WeatherActivity" 
+    android:orientation="vertical"
+    android:background="@drawable/greybackground">
+
+    <TextView
+        android:text="@string/weatherTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:textSize="30sp"
+        android:gravity="center">
+        
+    </TextView>
+    <TableLayout
+        android:id="@+id/formCurrency"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    <TableRow
+            android:layout_marginTop="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+    	<TextView
+    	    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enterLocation"
+            ></TextView>
+    	<EditText
+    	    android:inputType="text"
+    	        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    	    android:id="@+id/editCity"
+    	    ></EditText>
+        	
+    </TableRow>
+        <TableRow
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+    	<TextView
+    	     android:text="@string/enterCountryCode"
+    	      android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    	     ></TextView>
+    	<EditText
+    	     android:inputType="text"
+    	       android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    	    android:id="@+id/editCountryCode"
+    	    ></EditText>
+        	
+    </TableRow>
+    <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+    	<Button
+		    	android:layout_width="match_parent"         
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonshape"
+                android:padding="5dp"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="@string/getWeather"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:onClick="getWeather"
+		    ></Button>
+               	
+    </TableRow>
+    </TableLayout>
+	<TextView
+	    android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+ android:layout_marginTop="20dp"
+ android:textSize="25sp"
+ android:id="@+id/displayMsgWeather"></TextView>
+    <GridView
+        android:id="@+id/weatherGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:numColumns="2"
+        android:orientation="vertical"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+</LinearLayout>
